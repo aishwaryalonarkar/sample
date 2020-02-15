@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My hello world page</title>
+    <link rel="stylesheet" type="text/css" href="hello-world.css" media="all">
+    <style type="text/css">
+    	body {
+			  background-color: #FF9800;
+			  color: black;
+			}
+			.vertical-container {
+			  height: 300px;
+			  display: -webkit-flex;
+			  display:         flex;
+			  -webkit-align-items: center;
+			          align-items: center;
+			  -webkit-justify-content: center;
+			          justify-content: center;
+			}
+			h1.vertical-container {
+			  font-size: 275%;
+			}
+    </style>
+  </head>
+  <body>
+    <h1 class="vertical-container">Hello World</h1>
+    <script src="https://www.gstatic.com/firebasejs/4.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAXK4Orxl2CghIQvKiUPtkhEngSgzteqE0",
+        authDomain: "hello-world-pwa-8669c.firebaseapp.com",
+        databaseURL: "https://hello-world-pwa-8669c.firebaseio.com",
+        projectId: "hello-world-pwa-8669c",
+        storageBucket: "hello-world-pwa-8669c.appspot.com",
+        messagingSenderId: "660239288739"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </body>
+</html>
